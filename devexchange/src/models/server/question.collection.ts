@@ -1,4 +1,4 @@
-import { Client, Databases, IndexType, Permission } from "node-appwrite"
+import { IndexType, Permission } from "node-appwrite"
 import { db, questionCollection } from "../name"
 import { databases } from "./config"
 
