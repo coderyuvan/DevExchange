@@ -37,10 +37,11 @@ interface IAuthStore {
   logout(): Promise<void>
 }
 
-export const authStore = create<IAuthStore>()(
+export const useAuthStore = create<IAuthStore>()(
   persist(
     // immer will look for mutation using set variable
     immer((set) => ({
+
       session: null,
       jwt: null,
       user: null,
